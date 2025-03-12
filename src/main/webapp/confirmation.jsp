@@ -15,7 +15,7 @@
 	<p></p>
 	<div class="container">
 		<div class="card">
-			<div class="card-header">Confirmation Ajout Client</div>
+			<div class="card-header">Confirmation  Client</div>
 			<div class="card-body">
 
 				<div class="form-group">

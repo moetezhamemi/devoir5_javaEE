@@ -1,11 +1,23 @@
 package metier.entities;
 import java.io.Serializable;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+@Entity
+@Table(name = "clients")
 public class Client implements  Serializable{
+	@Id
+	@GeneratedValue (strategy=GenerationType.IDENTITY)
 	private Long idclient;
 	private String nomclient;
 	private String emailclient;
+	@Column (name = "adresseclient")
 	private String adresseClient;
+	@Column (name = "chiffre_daffaires")
 	private double chiffre_daffaire;
 	public Client() {super();}
 	public Long getIdclient() {
